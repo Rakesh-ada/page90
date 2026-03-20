@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster Studio</title>
+    <meta
+      name="description"
+      content="A bold, modern single-page website built with HTML, CSS, and JavaScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-shapes" aria-hidden="true">
+      <span class="shape shape-a"></span>
+      <span class="shape shape-b"></span>
+      <span class="shape shape-c"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">Aster Studio</a>
+      <nav>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <p class="eyebrow">Design + Development</p>
+        <h1>Web experiences with pulse, not templates.</h1>
+        <p class="hero-copy">
+          We build crisp, expressive websites that stay fast and readable on every screen.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#contact">Start a Project</a>
+          <a class="btn btn-outline" href="#work">See Highlights</a>
+        </div>
+      </section>
+
+      <section id="work" class="work reveal">
+        <h2>Selected Highlights</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Ridge Coffee</h3>
+            <p>A storefront refresh that increased mobile orders by 28%.</p>
+          </article>
+          <article class="card">
+            <h3>Northline Studio</h3>
+            <p>Portfolio redesign with motion-led storytelling and clean SEO.</p>
+          </article>
+          <article class="card">
+            <h3>Harbor Labs</h3>
+            <p>Launch site with product explainers, demos, and docs navigation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about reveal">
+        <h2>How We Work</h2>
+        <p>
+          Strategy first. Design second. Build always. Every project starts with user goals and ends with
+          measurable clarity.
+        </p>
+        <div class="stats">
+          <div>
+            <span class="stat-value" data-count="47">0</span>
+            <span class="stat-label">Projects shipped</span>
+          </div>
+          <div>
+            <span class="stat-value" data-count="96">0</span>
+            <span class="stat-label">Performance average</span>
+          </div>
+          <div>
+            <span class="stat-value" data-count="14">0</span>
+            <span class="stat-label">Industry niches</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact reveal">
+        <h2>Let us make something memorable.</h2>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Project scope
+            <textarea rows="4" placeholder="Tell us what you are building..."></textarea>
+          </label>
+          <button class="btn btn-solid" type="submit">Send Inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Aster Studio. Crafted with intent.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
